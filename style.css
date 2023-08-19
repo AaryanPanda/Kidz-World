@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.div1 img {
+    height: 40px;
+}
+
+.left-logo {
+    padding-left: 60px;
+}
+
+.right-logo {
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.div2 {
+    width: 100%;
+    height: 400px;
+    background-image: url("./assets/kw-background.png");
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    padding-top: 1px;
+}
+
+.div2> :nth-child(1) {
+    font-size: 60px;
+    color: white;
+}
+
+.div2> :nth-child(2) {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.div3 {
+    margin-top: 120px;
+    margin-left: 60px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.div4 {
+    display: flex;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.books-gallery {
+    /* background-color: pink; */
+    width: 240px;
+}
+
+.books img {
+    width: 240px;
+    padding: 10px 25px 0 25px;
+}
+
+.description1 {
+    padding-left: 25px;
+}
+
+.book-name {
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+
+.author-name {
+    color: rgb(92, 92, 92);
+    font-size: 16px;
+}
+
+.buy-detail1 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+    align-items: center;
+    padding-top: 12px;
+    font-weight: 600;
+}
+
+.cart1 {
+    display: flex;
+    background-color: rgb(97, 150, 255);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    width: 60px;
+}
+
+.cart1 img {
+    height: 20px;
+}
+
+.div5 {
+    margin-top: 120px;
+    margin-left: 60px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.div6 {
+    display: flex;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.games img {
+    width: 360px;
+    padding: 10px 30px 0 30px;
+}
+
+.games-gallery {
+    width: 360px;
+}
+
+.description2 {
+    padding-left: 35px;
+}
+
+.game-name {
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+
+.game-type {
+    color: rgb(92, 92, 92);
+    font-size: 16px;
+}
+
+.buy-detail2 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 35px;
+    align-items: center;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.cart2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgb(97, 150, 255);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    width: 60px;
+    height: 30px;
+}
+
+.cart2 img {
+    height: 20px;
+}
+
+.div7 {
+    margin-top: 120px;
+    margin-left: 60px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.div8 {
+    display: flex;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.handmade img {
+    width: 360px;
+    padding: 10px 30px 0 30px;
+}
+
+.handmade-gallery {
+    width: 360px;
+}
+
+.description3 {
+    padding-left: 35px;
+}
+
+.handmade-name {
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+
+.handmade-type {
+    color: rgb(92, 92, 92);
+    font-size: 16px;
+}
+
+.buy-detail3 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 35px;
+    align-items: center;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.cart3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgb(97, 150, 255);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    width: 60px;
+    height: 30px;
+}
+
+.cart3 img {
+    height: 20px;
+}
+
+.div9 {
+    margin-top: 100px;
+    background-color: black;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70px;
+    align-items: flex-end;
+}
+
+.div9 img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.left-half p {
+    color: white;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.right-half {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 60px;
+    justify-content: center;
+    color: white;
+}
+
+.right-half> :nth-child(1) {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.right-half> :nth-child(2),
+.right-half>:nth-child(3) {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+@media all and (max-width: 500px) {
+    .div2 {
+        background-image: url(./assets/kw-background.png);
+        background-size: cover;
+        background-position-y: bottom;
+        background-position-x: 75%;
+        background-repeat: no-repeat;
+    }
+
+    .div1 {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .left-logo {
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .left-logo img {
+        height: 30px;
+    }
+
+    .right-logo {
+        padding: 10px 30px 10px 0;
+    }
+
+    .right-logo img {
+        height: 30px;
+    }
+
+    .div3 {
+        text-align: center;
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .div4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .books-gallery {
+        margin-top: 20px;
+    }
+
+    .div5 {
+        text-align: center;
+        font-size: 24px;
+        margin: 0;
+        margin-top: 60px;
+    }
+
+    .div6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .games-gallery {
+        margin-top: 20px;
+    }
+
+    .div7 {
+        text-align: center;
+        font-size: 24px;
+        margin: 0;
+        margin-top: 60px;
+    }
+
+    .div8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .handmade-gallery {
+        margin-top: 20px;
+    }
+
+    .div9 {
+        margin: 0;
+        padding: 0;
+        height: 200px;
+    }
+
+    .right-half {
+        padding: 0;
+        padding-right: 10px;
+    }
+
+    .left-half {
+        padding: 10px;
+    }
+}
