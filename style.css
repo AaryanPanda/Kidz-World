@@ -69,8 +69,8 @@
     width: 100%;
     padding-left: 40px;
     padding-right: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-wrap: wrap;
+    justify-content: center; */
 }
 
 .books-gallery {
@@ -131,8 +131,8 @@
     width: 100%;
     padding-left: 40px;
     padding-right: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-wrap: wrap;
+    justify-content: center; */
 }
 
 .games img {
@@ -195,8 +195,8 @@
     width: 100%;
     padding-left: 40px;
     padding-right: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-wrap: wrap;
+    justify-content: center; */
 }
 
 .handmade img {
@@ -393,4 +393,18 @@
     .left-half {
         padding: 10px;
     }
+}
+@media all and (max-width:950px){
+.div4{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.div6{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.div8{
+    flex-wrap: wrap;
+    justify-content: center;
+}
 }
