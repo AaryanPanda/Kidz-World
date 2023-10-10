@@ -11,9 +11,9 @@
         <div class="left-logo">
             <img src="./assets/kw-logo.png" alt="">
         </div>
-        <div class="right-logo">
+        <div class="right-logo"  id="main-cart">
             <img src="./assets/cart-icon.png" alt="">
-            <p>Cart items (0)</p>
+            <p>Cart items (<span id="item-number">0</span>)</p>
         </div>
        
     </div>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="buy-detail1">
                     <p class="price1">$7.49</p>
-                    <div class="cart1">
+                    <div class="cart1 cart-icon" data-item="This was our pact" data-price="7.49" data-quantity="0">
                         <p>Add</p>
                         <img src="./assets/cart-icon-white.png" alt="">
                     </div>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="buy-detail1">
                     <p class="price1">$4.59</p>
-                    <div class="cart1">
+                    <div class="cart1 cart-icon" data-item="The famous five" data-price="4.59" data-quantity="0">
                         <p>Add</p>
                         <img src="./assets/cart-icon-white.png" alt="">
                     </div>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="buy-detail1">
                     <p class="price1">$6.80</p>
-                    <div class="cart1">
+                    <div class="cart1 cart-icon" data-item="Matilda" data-price="6.80" data-quantity="0">
                         <p>Add</p>
                         <img src="./assets/cart-icon-white.png" alt="">
                     </div>
@@ -81,8 +81,8 @@
                     <p class="author-name">JK Rowling</p>
                 </div>
                 <div class="buy-detail1">
-                    <p class="price1">$10</p>
-                    <div class="cart1">
+                    <p class="price1">$10</p> 
+                    <div class="cart1 cart-icon" data-item="Harry Potter" data-price="10" data-quantity="0">
                         <p>Add</p>
                         <img src="./assets/cart-icon-white.png" alt="">
                     </div>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="buy-detail1">
                     <p class="price1">$7.29</p>
-                    <div class="cart1">
+                    <div class="cart1 cart-icon" data-item="For Young Readers" data-price="7.29" data-quantity="0">
                         <p>Add</p>
                         <img src="./assets/cart-icon-white.png" alt="">
                     </div>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="buy-detail1">
                     <p class="price1">$4.99</p>
-                    <div class="cart1">
+                    <div class="cart1 cart-icon" data-item="Wimoy Kid-DIY" data-price="4.99" data-quantity="0">
                         <p>Add</p>
                         <img src="./assets/cart-icon-white.png" alt="">
                     </div>
@@ -135,7 +135,7 @@
                 </div>
                 <div class="buy-detail2">
                     <p class="price2">$17.49</p>
-                    <div class="cart2">
+                    <div class="cart2 cart-icon" data-item="Dart Board" data-price="17.49" data-quantity="0">
                         <p>Add</p>
                         <img src="./assets/cart-icon-white.png" alt="">
                     </div>
@@ -151,7 +151,7 @@
                 </div>
                 <div class="buy-detail2">
                     <p class="price2">$19.99</p>
-                    <div class="cart2">
+                    <div class="cart2 cart-icon" data-item="Connect 4" data-price="19.99" data-quantity="0">
                         <p>Add</p>
                         <img src="./assets/cart-icon-white.png" alt="">
                     </div>
@@ -167,7 +167,7 @@
                 </div>
                 <div class="buy-detail2">
                     <p class="price2">$20.99</p>
-                    <div class="cart2">
+                    <div class="cart2 cart-icon" data-item="Jenga" data-price="20.99" data-quantity="0"> 
                         <p>Add</p>
                         <img src="./assets/cart-icon-white.png" alt="">
                     </div>
@@ -183,7 +183,7 @@
                 </div>
                 <div class="buy-detail2">
                     <p class="price2">$19.49</p>
-                    <div class="cart2">
+                    <div class="cart2 cart-icon" data-item="Monopoly" data-price="19.49" data-quantity="0">
                         <p>Add</p>
                         <img src="./assets/cart-icon-white.png" alt="">
                     </div>
@@ -204,7 +204,7 @@
                 </div>
                 <div class="buy-detail3">
                     <p class="price3">$12.49</p>
-                    <div class="cart3">
+                    <div class="cart3 cart-icon" data-item="Bookmarks" data-price="12.49" data-quantity="0">
                         <p>Add</p>
                         <img src="./assets/cart-icon-white.png" alt="">
                     </div>
@@ -220,7 +220,7 @@
                 </div>
                 <div class="buy-detail3">
                     <p class="price3">$19.99</p>
-                    <div class="cart3">
+                    <div class="cart3 cart-icon" data-item="Birthday card" data-price="19.99" data-quantity="0">
                         <p>Add</p>
                         <img src="./assets/cart-icon-white.png" alt="">
                     </div>
@@ -237,7 +237,7 @@
                     </div>
                     <div class="buy-detail3">
                         <p class="price3">$15.99</p>
-                        <div class="cart3">
+                        <div class="cart3 cart-icon" data-item="Stuffed toys" data-price="15.99" data-quantity="0"> 
                             <p>Add</p>
                             <img src="./assets/cart-icon-white.png" alt="">
                         </div>
@@ -255,7 +255,7 @@
                     </div>
                     <div class="buy-detail3">
                         <p class="price3">$18.49</p>
-                        <div class="cart3">
+                        <div class="cart3 cart-icon" data-item="Dream catcher drawing" data-price="18.49" data-quantity="0">
                             <p>Add</p>
                             <img src="./assets/cart-icon-white.png" alt="">
                         </div>
@@ -275,5 +275,7 @@
             <p id="p3">Talk to me at krishti@gmail.com</p>
         </div>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
