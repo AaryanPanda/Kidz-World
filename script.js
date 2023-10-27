@@ -1,4 +1,4 @@
-const itemDetails = {}; // Object to store item details
+const itemNames = {}; // Object to store item details
 
 
 
@@ -7,30 +7,25 @@ const itemDetails = {}; // Object to store item details
 document.addEventListener('click', function(event) {
   const clickedElement = event.target.closest('.cart-icon');
 
+  
   if (clickedElement) {
-    const itemName = clickedElement.getAttribute('data-item');
+    const itemDetails = clickedElement.getAttribute('data-item');
     const itemPrice = parseFloat(clickedElement.getAttribute('data-price'));
-    let itemQuantity = parseInt(clickedElement.getAttribute('data-quantity'));
 
-    // Increment the quantity by 1 for each click
-    itemQuantity += 1;
 
-    // Update the data-quantity attribute
-    clickedElement.setAttribute('data-quantity', itemQuantity);
-
-    // Update or add item details in the itemDetails object
-    if (itemDetails[itemName]) {
-      itemDetails[itemName].quantity += 1;
+    // Update or add item details in the itemNames object
+    if (itemNames[itemDetails]) {
+      itemNames[itemDetails].quantity += 1;
     } else {
-      itemDetails[itemName] = {
+      itemNames[itemDetails] = {
         price: itemPrice,
         quantity: 1
     };
     updateItemNumber(); // Update item number when a new item is added
     }
   }
+    console.log
 });
-
 
 
 
@@ -58,8 +53,8 @@ mainCart.addEventListener('click', function() {
 
   let totalAmount = 0;  // Initialize the total amount
 
-  for (const [itemName, itemInfo] of Object.entries(itemDetails)) {
-    console.log(`Item Name: ${itemName}, Item Price: $${itemInfo.price.toFixed(2)}, Item Quantity: ${itemInfo.quantity}`);
+  for (const [itemTitle, itemInfo] of Object.entries(itemNames)) {
+    console.log(`Item Name: ${itemTitle}, Item Price: $${itemInfo.price.toFixed(2)}, Item Quantity: ${itemInfo.quantity}`);
 
     // Calculate item total and add it to the total amount
     const itemTotal = itemInfo.price * itemInfo.quantity;
