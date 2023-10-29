@@ -1,8 +1,6 @@
 const itemNames = {}; // Object to store item details
 
 
-
-
 //Added Event Listener to Carts
 document.addEventListener('click', function(event) {
   const clickedElement = event.target.closest('.cart-icon');
@@ -30,7 +28,6 @@ document.addEventListener('click', function(event) {
 
 
 
-
 //Built Update Function
 function updateItemNumber() {
     const itemNumberSpan = document.getElementById('item-number');
@@ -43,12 +40,11 @@ function updateItemNumber() {
 
 
 
-
-
 //Added Event Listener to the Main Cart
 const mainCart = document.getElementById('main-cart');
 
 mainCart.addEventListener('click', function() {
+
   console.clear(); // Clear console to avoid repetition
 
   let totalAmount = 0;  // Initialize the total amount
@@ -65,5 +61,28 @@ mainCart.addEventListener('click', function() {
   const dollars = Math.floor(totalAmount);
   const cents = Math.round((totalAmount - dollars) * 100);
 
-  console.log(`The total amount is ${dollars}$ and ${cents} cents`);
+  console.log(`The total amount is ${dollars}$ and ${cents}cents`);
+
+  whatsappLink = "https://api.whatsapp.com/send?phone=918114720014&text=Order%20details"
+  whatsappApi(dollars, cents)
+
+  window.open(whatsappLink)
 });
+
+
+
+
+//Whatsapp API
+
+let whatsappLink = "https://api.whatsapp.com/send?phone=918114720014&text=Order%20details"
+
+function whatsappApi(dollars, cents) {
+  for (const [itemTitle, itemInfo] of Object.entries(itemNames)) {
+
+    whatsappLink += "%0A" + itemTitle + "%20" + itemInfo.quantity
+
+  }
+
+  whatsappLink += "%0A" + "Total Price:" + "%20" + "$" + dollars + "%20" + cents + "c"
+
+}

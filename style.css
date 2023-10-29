@@ -22,9 +22,10 @@
 }
 
 .right-logo {
+    cursor: pointer;
     display: flex;
     align-items: center;
-    padding-right: 60px;
+    margin-right: 60px;
     font-size: 17px;
     font-weight: 700;
 }
@@ -297,8 +298,10 @@
         background-image: url(./assets/kw-background.png);
         background-size: cover;
         background-position-y: bottom;
-        background-position-x: 75%;
+        background-position-x: 60%;
         background-repeat: no-repeat;
+        padding: 10px;
+        width: 100%;
     }
 
     .div1 {
